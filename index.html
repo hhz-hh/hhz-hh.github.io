@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  
+<head>
+  <title>[www.Urban Collage.com]</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="sharpicons_opera-house.png" type="image/svg+xml">
+</head>
+  
+<style>
+     body {
+      background-color: #c7c1b4; /* 这里设置网页背景颜色 */
+      font-family: Arial, sans-serif; /* 这里设置网页字体 */
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* 让页面高度更大，以便更明显看到50vh的位置 */
+      position: relative; /* 使绝对定位的子元素参考于 body */
+
+    }
+    
+    .container-1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 10vh;
+      width: 100vw;
+      box-sizing: border-box;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    .container-1 img {
+      width: 28vw;
+      height: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .container-1 img:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 5vw;
+      font-weight: bold;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 400%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbow 5s linear infinite;
+      transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 100%;
+      }
+    }
+
+    h1:hover {
+      color: #ff6347;
+      transform: scale(1.1);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image-container img {
+      display: block;
+    }
+
+    .image-container a {
+      display: block;
+      margin-top: 2vh;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.5vw;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+    }
+
+    .image-container a:link {
+      color: black;
+      text-decoration: none;
+    }
+
+    .image-container a:visited {
+      color: green;
+    }
+
+    .image-container a:hover {
+      color: red;
+      font-style: italic;
+    }
+
+    .image-container a:active {
+      color: blue;
+    }
+    
+    
+
+    .typing-container-2 {
+  position: relative;
+  top: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  max-width: 1000px;
+  font-size: 2vw;
+  text-align: center;
+  color: rgb(122, 83, 9); /* 悬停前的文字颜色 */
+  transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease; /* 添加过渡效果 */
+  font-weight: bold;
+}
+
+.typing-container-2:hover {
+  color: brown; /* 悬停时的文字颜色 */
+  transform: translateX(-50%) scale(1.1); /* 悬停时放大 */
+  font-weight: bold; /* 悬停时的字体粗细 */
+}
+
+
+
+
+    #video1 {
+  position: relative; /* 相对定位 */
+  top: 20vh; /* 距离 .container-1 20vh 的位置 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 确保居中对齐 */
+  width: 50vw; /* 宽度设置为50视口宽度 */
+  max-width: 2000px; /* 最大宽度限制 */
+  height: auto; /* 高度自适应 */
+  margin: 0 auto; /* 居中对齐 */
+  overflow-x: auto; /* 允许水平滚动 */
+  
+}
+  
+        
+        
+
+        
+    
+
+  
+
+
+
+
+
+
+
+
+  
+  
+
+
+</style>
+</head>
+<body>
+  <h1>Urban Collage</h1>
+  <div class="container-1">
+    <div class="image-container">
+      <img id="image-1" src="1.jpg" alt="这里添加图片1">
+      <a id="link-1" href="https://www.pinterest.co.uk/search/pins/?q=UK%20Urban%20Collage&rs=typed">UK Urban Collage</a>
+    </div>
+    <div class="image-container">
+      <img id="image-2" src="2.jpg" alt="这里添加图片2">
+      <a id="link-2" href="https://www.pinterest.co.uk/search/pins/?q=french%20Urban%20Collage&rs=typed">French Urban Collage</a>
+    </div>
+    <div class="image-container">
+      <img id="image-3" src="3.jpg" alt="这里添加图片3">
+      <a id="link-3" href="https://www.pinterest.co.uk/search/pins/?q=french%20Urban%20Collage&rs=typed">Denmark Urban Collage</a>
+    </div>
+  </div>
+  
+    <div class="typing-container-2" id="typingText">
+      Urban collages can show the diversity of a city by combining different images, symbols, colours and textures. It can also reflect the historical continuity and cultural diversity of a city.
+    </div>
+
+    <video id="video1" controls><source src="1.mp4" type="video/mp4"></video>
+    
+  
+  
+  
+      
+
+
+    
+  
+  
+
+    
+     
+
+     
+          
+</body>
+</html>
